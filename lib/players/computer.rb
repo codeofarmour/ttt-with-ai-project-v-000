@@ -13,6 +13,10 @@ module Players
         move = [1, 3, 7, 9].detect{|i| !board.taken?(i)}.to_s 
         
       elsif board.turn_count == 3 && (board.position(1) == board.position(9) || board.position(3)) == board.position(7)
+        move == "2"
+        
+      else
+        Game::WIN_COMBINATIONS.detect do |cmb|
       end 
     end 
   end
