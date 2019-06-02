@@ -17,6 +17,7 @@ module Players
         
       else
         Game::WIN_COMBINATIONS.detect do |cmb|
+          if cmb.select{|i| board.position(i+1) == token}.size == 2 && cmb.any?{
       end 
     end 
   end
