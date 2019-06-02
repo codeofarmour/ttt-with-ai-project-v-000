@@ -70,6 +70,7 @@ class Game
     elsif draw?
       puts "Cat's Game!"
     end
+  end 
 end
 
 
